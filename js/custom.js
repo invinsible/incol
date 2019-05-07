@@ -20,7 +20,23 @@ $(document).ready(function(){
     slidesToShow: 3,
     slidesToScroll: 1,
     dots: false,
-    arrows: true
+    arrows: true,
+    responsive: [
+    {
+    	breakpoint: 750,
+    	settings: {
+    		infinite: true,
+    		slidesToShow: 2
+    	}
+    },
+    {	
+    	breakpoint: 530,
+    	settings: {
+    		infinite: true,
+    		slidesToShow: 1
+    	}
+    }    	
+    ]
   });
 
   $('.in_works-list').slick({
