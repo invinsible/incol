@@ -305,10 +305,6 @@ h3.in_team-title {
   text-transform: uppercase;
 }
 
-.in_arrow-btn::before {
-  content: '';
-  
-}
 
 @media (max-width: 1080px) {
 
@@ -636,15 +632,50 @@ h3.in_team-title {
 	.in_stories-list .slick-dots {
 		bottom: -35px;
 	}
-
-	
 }
 
+.in_arrow-btn {
+  display: inline-block;
+}
 
+.arrow {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  width: 90%;
+  height: 2px;
+  background-color: #fff;
+}
 
+.arrow::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  width: 10px;
+  height: 100%;
+  background-color: #fff;
+}
 
+.arrow:after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 0px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #fff;
+  border-bottom: transparent;
+  border-left: transparent;
+  transform: rotate(50deg);
+}
 
+.in_politic .arrow {
+  margin-left: 25%;
+}
 
+.in_tehnology .arrow {  
+  margin-left: 45%;
+}
 
 
 
@@ -881,18 +912,6 @@ h3.in_team-title {
   margin-bottom: 23px;
   line-height: 20px;
   color: #fff;
-}
-
-.in_arrow-btn {
-  font-size: 21px;
-  font-weight: 800;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.in_arrow-btn::before {
-  content: '';
-  
 }
 
 
