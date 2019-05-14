@@ -46,5 +46,29 @@ $(document).ready(function(){
     centerMode: true,
     variableWidth: true
   });
+
+  $('.in_partners-list').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: true,
+    responsive: [
+    {
+    	breakpoint: 750,
+    	settings: {
+    		infinite: true,
+    		slidesToShow: 2
+    	}
+    },
+    {	
+    	breakpoint: 530,
+    	settings: {
+    		infinite: true,
+    		slidesToShow: 1
+    	}
+    }    	
+    ]
+  });
 });
 
